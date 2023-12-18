@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Fitness Tracker</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Fitness Tracker</h1>
+        <form id="activityForm">
+            <label for="activity">Activity:</label>
+            <input type="text" id="activity" required>
+
+            <label for="duration">Duration (minutes):</label>
+            <input type="number" id="duration" required>
+
+            <button type="submit">Log Activity</button>
+        </form>
+
+        <div id="goalSection">
+            <h2>Set Your Daily Goal</h2>
+            <label for="dailyGoal">Daily Goal (minutes):</label>
+            <input type="number" id="dailyGoal" required>
+
+            <button onclick="setDailyGoal()">Set Goal</button>
+        </div>
+
+        <div id="progressSection">
+            <h2>Your Progress</h2>
+            <p id="progressMessage"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
