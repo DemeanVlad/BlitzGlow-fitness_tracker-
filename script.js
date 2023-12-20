@@ -29,11 +29,11 @@ function setDailyGoal() {
 function updateProgress() {
     const progressMessage = document.getElementById('progressMessage');
 
-    if (dailyGoal === 0) {
-        progressMessage.textContent = "Set your daily goal to track your progress!";
-        return;
-    }
+   // if (dailyGoal === 0) {
+    //    progressMessage.textContent = "Set your daily goal to track your progress!";
+     //   return;
+   // }
 
-    const percentage = Math.min((totalDuration / dailyGoal) * 100, 100);
-    progressMessage.textContent = `You've completed ${percentage.toFixed(2)}% of your daily goal.`;
+//    const percentage = Math.min((totalDuration / dailyGoal) * 100, 100);
+  //  progressMessage.textContent = `You've completed ${percentage.toFixed(2)}% of your daily goal.`;
 }
